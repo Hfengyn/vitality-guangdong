@@ -1,0 +1,229 @@
+
+.bg{
+	position: fixed;
+	z-index: -1;
+}
+@media screen and (min-width: 1399px) {
+	.bg{
+		width: 100%;
+		height: 100%;
+	}
+}
+@media screen and (min-width: 633px) and (max-width: 1399px){
+	.bg{
+		width: 1440px;
+		height: 756px;
+	}
+}
+@media screen and (max-width: 632px){
+	.bg{
+		width: 100%;
+		height: 100%;
+	}
+}
+.top img:nth-child(1){
+
+}
+.top img:nth-child(2){
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.top{
+	width: 1107px;
+	height: 55px;
+	padding-top: 116px;
+	padding-bottom: 50px;
+	margin: auto;
+}
+section .left>img{
+	display: block;
+	width: 278px;
+	height: 140px;
+	margin-top: 3px;
+}
+section .centerleft>img{
+	display: block;
+	width: 162px;
+	height: 140px;
+	margin-top: 3px;
+}
+section .centerright>img{
+	display: block;
+	width: 162px;
+	height: 140px;
+	margin-top: 3px;
+}
+section .right>img{
+	display: block;
+	width: 240px;
+	height: 140px;
+	margin-top: 3px;
+}
+section>div{
+	float: left;
+}
+section .left{
+	margin-left: 15px;
+}
+section .centerleft{
+	margin-left: 15px;
+}
+section .centerright, section .right{
+	margin-left: 3px;
+}
+section{
+	width: 903px;
+	height: 450px;
+	margin: 13px auto;
+	overflow: hidden;
+}
+footer{
+	width: 464px;
+	height: 13px;
+	margin: 97px auto 0px;
+}
+@media screen and (max-width: 878px){
+	footer{
+		margin-left: 208px;
+	}
+	
+}
+@media screen and (max-width: 632px){
+	.top{
+		width: 100%;
+	}
+	.top img:nth-child(1){
+		width: 20%;
+		margin-left: 15%;
+		height: 45px;
+		margin-top: -61px;
+	}
+	.top img:nth-child(2){
+		display: block;
+		width: 30%;
+		height: 26px;
+		margin-left: 15%;
+		margin-top: 0px;
+	}
+	article{
+		width: 100%;
+		height: 100%;
+		margin: auto;
+	}
+	section{
+		width: 100%;
+		height: 642px;
+
+	}
+	section .left{
+		width: 45%;
+		margin-left: 15%;
+	}
+	section .centerleft{
+		width: 25%;
+	}
+	section .centerright{
+		width: 25%;
+		margin-left: 15%;
+	}
+	section .right{
+		width: 45%;
+	}
+
+	section .left>img{
+		width: 100%;
+		height: 104px;
+	}
+	section .centerleft>img{
+		width: 100%;
+		height: 104px;
+		margin-left: -12px;
+	}
+	section .centerright>img{
+		width: 100%;
+		height: 105px;
+	}
+	section .right>img{
+		width: 100%;
+		height: 105px;
+	}
+	footer{
+		width: 100%;
+		margin: 50px auto 0px;
+	}
+	footer img{
+		width: 80%;
+		margin-left: 10%;
+	}
+}
+section div img:hover{
+	animation: move 1s linear 0.2s;
+}
+@keyframes move{
+	0%{
+		transform: translateY(-30px);
+	}
+	20%{
+		transform: translateY(0px);
+	}
+	40%{
+		transform: translateY(-15px);
+	}
+	60%{
+		transform: translateY(0px);
+	}
+	80%{
+		transform: translateY(-5px);
+	}
+	100%{
+		transform: translateY(0px);
+	}
+}
+.scale{
+	animation: run 1s linear 0.2s;
+	animation-delay: 0.2s;
+}
+@keyframes run{
+	0%{
+		transform: scale(1.2,1.2);
+	}
+	20%{
+		transform: scale(0.85,0.85);
+	}
+	40%{
+		transform: scale(1.1,1.1);
+	}
+	60%{
+		transform: scale(0.9,0.9);
+	}
+	80%{
+		transform: scale(1.05,1.05);
+	}
+	100%{
+		transform: scale(1,1);
+	}
+}
+.skew{
+	animation: skewing 1s linear 0.2s;
+	animation-delay: 0.2s;
+}
+@keyframes skewing{
+	0%{
+		transform: translateX(-25px);
+	}
+	20%{
+		transform: translateX(20px);
+	}
+	40%{
+		transform: translateX(-15px);
+	}
+	60%{
+		transform: translateX(10px);
+	}
+	80%{
+		transform: translateX(-5px);
+	}
+	100%{
+		transform: translateX(0px);
+	}
+}
